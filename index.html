@@ -1,205 +1,406 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru  ">
 <head>
-	<title>Shower Presentation Engine</title>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen-16x10.css">
+  <title>Shower Presentation Engine</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="shower/themes/ribbon/styles/screen-16x10.css">
 </head>
 <body class="shower list">
 
-	<header class="caption">
-		<h1>Shower Presentation Engine</h1>
-		<p>Yours Truly, Famous Inc.</p>
-	</header>
+<header class="caption">
+  <h1>Shower Presentation Engine</h1>
+  <p>Yours Truly, Famous Inc.</p>
+</header>
 
-	<section class="slide" id="cover">
-		<h2>Shower Presentation Engine</h2>
-		<p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
-		<figure>
-			<img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
-			<figcaption class="white">
-				<a href="http://fiftyfootshadows.net/">© John Carey</a>
-			</figcaption>
-		</figure>
-		<style>
-			#cover h2 {
-				margin:30px 0 0;
-				color:#FFF;
-				text-align:center;
-				font-size:70px;
-				}
-			#cover p {
-				margin:10px 0 0;
-				text-align:center;
-				color:#FFF;
-				font-style:italic;
-				font-size:20px;
-				}
-				#cover p a {
-					color:#FFF;
-					}
-		</style>
-	</section>
+<section class="slide" id="cover">
+  <h2>Shower Presentation Engine</h2>
+  <figure>
+    <img class="cover" src="pictures/cover.png" alt="Основы адаптивного веб-дизайна">
+    <figcaption class="white">
+      <a href="http://fiftyfootshadows.net/">Основы адаптивного веб-дизайна</a>
+    </figcaption>
+  </figure>
+  <style>
+    #cover h2 {
+      margin: 30px 0 0;
+      color: #FFF;
+      text-align: center;
+      font-size: 0px;
+    }
 
-	<section class="slide">
-		<h2>Shower key features</h2>
-		<ol>
-			<li>Built on HTML, CSS and vanilla JavaScript</li>
-			<li>Works in all modern browsers</li>
-			<li>Themes are separated from engine</li>
-			<li>Modular and extensible</li>
-			<li>Fully keyboard accessible</li>
-			<li>Printable to PDF</li>
-		</ol>
-		<p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
-	</section>
+    #cover p {
+      margin: 10px 0 0;
+      text-align: center;
+      color: #FFF;
+      font-style: italic;
+      font-size: 0px;
+    }
 
-	<section class="slide">
-		<h2>Plain text on your slides</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
-	</section>
+    #cover p a {
+      color: #FFF;
+    }
 
-	<section class="slide">
-		<h2>Two columns if you like</h2>
-		<p class="double">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-	</section>
+    .source-info {
+      text-align: right;
+      font-size: .7em;
+    }
 
-	<section class="slide">
-		<h2>All kind of lists</h2>
-		<ol>
-			<li>Simple lists are marked with bullets</li>
-			<li>Ordered lists begin with a number</li>
-			<li>You can even nest lists one inside another
-				<ul>
-					<li>Or mix their types</li>
-					<li>But do not go too far</li>
-					<li>Otherwise audience will be bored</li>
-				</ul>
-			</li>
-			<li>Look, seven rows exactly!</li>
-		</ol>
-	</section>
+    .w49perc {
+      width: 49%;
+    }
 
-	<section class="slide">
-		<h2>Serious citations</h2>
-		<figure>
-			<blockquote>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-			</blockquote>
-			<figcaption>Marcus Tullius Cicero</figcaption>
-		</figure>
-	</section>
+    .dib {
+      display: inline-block;
+      vertical-align: middle;
+    }
 
-	<section class="slide">
-		<h2>Code samples</h2>
-		<pre>
-			<code>&lt;!DOCTYPE html&gt;</code>
-			<code class="mark">&lt;html lang="en"&gt;</code>
-			<code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-			<code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-			<code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-			<code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-			<code><mark>&lt;/head&gt;</mark></code>
-		</pre>
-	</section>
+    p img {
+      display: block;
+    }
 
-	<section class="slide">
-		<h2>Even tables</h2>
-		<table>
-		<tr>
-			<th scope="col">Locavore</th>
-			<th>Umami</th>
-			<th>Helvetica</th>
-			<th>Vegan</th>
-		</tr>
-		<tr>
-			<th scope="row">Fingerstache</th>
-			<td>Kale</td>
-			<td>Chips</td>
-			<td>Keytar</td>
-		</tr>
-		<tr>
-			<th scope="row">Sriracha</th>
-			<td>Gluten-free</td>
-			<td>Ennui</td>
-			<td>Keffiyeh</td>
-		</tr>
-		<tr>
-			<th scope="row">Thundercats</th>
-			<td>Jean</td>
-			<td>Shorts</td>
-			<td>Biodiesel</td>
-		</tr>
-		<tr>
-			<th scope="row">Terry</th>
-			<td>Richardson</td>
-			<td>Swag</td>
-			<td>Blog</td>
-		</tr>
-		</table>
-		<p>It’s good to have information organized.</p>
-	</section>
+    .w100perc {
+      width: 100%;
+    }
 
-	<section class="slide" id="picture">
-		<h2>Pictures</h2>
-		<figure>
-			<img class="cover" src="pictures/picture.jpg" alt="Orange typewriter on a wooden table close-up">
-			<figcaption class="white">
-				<a href="http://fiftyfootshadows.net/">© John Carey</a>
-			</figcaption>
-		</figure>
-		<style>
-			#picture h2 {
-				color:#FFF;
-				}
-		</style>
-	</section>
+    .w80perc {
+      width: 80%;
+    }
 
-	<section class="slide">
-		<h2 class="shout shrink">You can even shout this way</h2>
-	</section>
+    .w70perc {
+      width: 70%;
+    }
 
-	<section class="slide">
-		<h2>Inner navigation</h2>
-		<ol>
-			<li>Lets you reveal list items one by one</li>
-			<li class="next">To keep some key points</li>
-			<li class="next">In secret from audience</li>
-			<li class="next">But it will work only once</li>
-			<li class="next">Nobody wants to see the same joke twice</li>
-		</ol>
-	</section>
+    .w60perc {
+      width: 60%;
+    }
 
-	<section class="slide grid">
-		<h2>All nicely aligned to grid</h2>
-	</section>
+    .w50perc {
+      width: 50%;
+    }
 
-	<section class="slide" id="see-more">
-		<h2 class="shout">
-			<img src="pictures/logo.svg" alt="Shower logo">
-			<a href="https://github.com/shower/shower">See more on GitHub</a>
-		</h2>
-		<style>
-			#see-more h2 {
-				font-size:100px
-				}
-			#see-more img {
-				width:0.72em;
-				height:0.72em;
-				}
-		</style>
-	</section>
+    .w40perc {
+      width: 40%;
+    }
 
-	<footer class="badge">
-		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
-	</footer>
+    .w30perc {
+      width: 30%;
+    }
 
-	<div class="progress"></div>
+    .ta-center {
+      text-align: center;
+    }
+  </style>
+</section>
+<section class="slide">
+  <h2>Вариаты сеток</h2>
+</section>
 
-	<script src="shower/shower.min.js"></script>
-	<!-- Copyright © 2017 Yours Truly, Famous Inc. -->
+<section class="slide">
+  <h2 style="font-size: .95em;">Фиксированная сетка</h2>
+  <p class="ta-center"><img class="w80perc" src="pictures/fix11.png" alt=""></p>
+</section>
+
+<section class="slide">
+  <h2 style="font-size: .95em;">«Фикс» на широких экранах</h2>
+  <p class="ta-center"><img class="w100perc" src="pictures/fix2.png" alt=""></p>
+
+</section>
+
+<section class="slide">
+  <h2 style="font-size: .95em;">«Фикс» на узких экранах</h2>
+  <p class="ta-center"><img class="w49perc" src="pictures/fix3.png" alt=""></p>
+</section>
+
+<section class="slide">
+  <h2 style="font-size: .95em;">Как сохранить сетку для всех экранов?</h2>
+  <p class="ta-center"><img class="w80perc" src="pictures/fix4.png" alt=""></p>
+</section>
+
+<section class="slide">
+  <h2 style="font-size: .95em;">Резиновая сетка может помочь?</h2>
+  <p class="ta-center"><img class="w40perc" src="pictures/fix5.png" alt=""></p>
+</section>
+
+<section class="slide">
+  <h2 style="font-size: .95em;">Но для «резины» всегда есть предел</h2>
+  <p class="ta-center"><img class="w70perc" src="pictures/fix6.png" alt=""></p>
+</section>
+
+
+<section class="slide">
+  <h2 style="font-size: .95em;">Минимальная ширина не спасает</h2>
+  <p class="ta-center"><img class="w70perc" src="pictures/fix7.png" alt=""></p>
+</section>
+
+<section class="slide">
+  <h2 style="font-size: .95em;">Зачем сохранять сетку для всех экранов?</h2>
+  <p class="ta-center"><img class="w80perc" src="pictures/fix8.png" alt=""></p>
+</section>
+
+<section class="slide">
+  <h2 style="font-size: .95em;">
+    Каждому экрану сетки по потребностям!</h2>
+  <p class="ta-center"><img class="w60perc" src="pictures/fix9.png" alt=""></p>
+</section>
+
+<section class="slide">
+  <h2>
+    Принцип перестройки сетки</h2>
+  <p>Содержание должно наилучшим образом отображаться
+     на разных размерах вьюпорта (видимой области). А для
+     этого нужно перестраивать сетку.</p>
+</section>
+
+<section class="slide">
+  <h2>
+    Адаптивные сетки</h2>
+  <p>По умолчанию работают одни CSS-правила.</p>
+
+  <p class="ta-center"><img class="w60perc" src="pictures/adaptiive1.png" alt=""></p>
+</section>
+
+<section class="slide">
+  <h2>
+    Адаптивные сетки</h2>
+  <p>При некоторых условиях активируются дополнительные CSS-правила.</p>
+
+  <p class="ta-center"><img class="w60perc" src="pictures/adaptive2.png" alt=""></p>
+</section>
+
+<section class="slide">
+  <h2>
+    Медиавыражения (media queries)</h2>
+  <p>Позволяют активировать CSS-код в зависимости от разных условий</p>
+
+  <p class="ta-center"><img class="w60perc" src="pictures/adaptive2.png" alt=""></p>
+</section>
+
+
+<section class="slide">
+  <h2>Терминология: адаптивный, отзывчивый</h2>
+  <p>
+    В англоязычных источниках отличают «adaptive»(адаптивный)
+    и «responsive»(отзывчивый). Если говорить только про фронтенд, то:
+  </p>
+  <ul>
+    <li>«responsive» — адаптивность с резиновой сеткой</li>
+    <li>«adaptive» — адаптивность с фиксированной сеткой</li>
+  </ul>ы
+
+</section>
+
+<section class="slide">
+  <h2>Терминология: адаптивный, отзывчивый</h2>
+  <p>
+    Но есть и другое понимание:
+  </p>
+  <ul>
+    <li>«responsive» — адаптивность, реализуемая на клиенте</li>
+    <li>
+      «adaptive» — адаптивность, реализуемая не на клиенте,
+      например, разный HTML для разных устройств (работает
+      серверное определение устройства).
+    </li>
+  </ul>
+
+</section>
+
+<section class="slide">
+  <h2>Рассмотрим отзывчивость и адаптивность в контексте фронтенда</h2>
+</section>
+
+<section class="slide">
+  <h2>«adaptive» — адаптивность с фиксированной сеткой</h2>
+  <p>
+    Адаптивный сайт. Сайт, который на мониторе отображается одним образом, на планшете иначе, а на смартфоне — снова
+    по-другому. Меняется расположение блоков, размеры кнопок и полей, текстов. Зачем? Чтобы пользователю было комфортнее
+    пользоваться сайтом: в кнопку легче попадать пальцем, если она крупная, текст в метро легче читать, если он 20
+    пунктов, а не 14.
+  </p>
+</section>
+
+<section class="slide">
+  <h2>Адаптивный сайт.</h2>
+  <p>
+    <img
+        src="https://blog.sibirix.ru/upload/tilda/f60/xf606c5d0e036d502409aa4031522280e.gif.pagespeed.ic._shOFslZqW.webp"
+        alt="пример сетки отзывчивого веб-сайта">
+  </p>
+</section>
+
+<section class="slide">
+  <h2>Примеры «adaptive»:</h2>
+  <ul>
+    <li><a href="http://www.charlotteobserver.com/" target="_blank">www.charlotteobserver.com</a></li>
+    <li><a href="http://www.onepageawards.com/" target="_blank">www.onepageawards.com</a></li>
+    <li><a href="https://resin.io/pricing/" target="_blank">resin.io</a></li>
+    <li><a href="https://www.onefootball.com/en/home" target="_blank">www.onefootball.com</a></li>
+    <li><a href="http://www.selfedge.com/" target="_blank">www.selfedge.com</a></li>
+    <li><a href="http://paulvanoijen.com/" target="_blank">paulvanoijen.com</a></li>
+    <li><a href="http://strohlsf.com/" target="_blank">strohlsf.com</a></li>
+  </ul>
+</section>
+
+
+<section class="slide">
+  <h2>«responsive» — адаптивность с резиновой сеткой.</h2>
+  <p>
+    Отзывчивый сайт. Сайт, который имеет несколько вариантов отображения, но переходы между ними плавные, как на
+    «резине». Меняете размер окна — кнопочки медленно меняются в размерах, блоки плавно ужимаются, а когда наступает
+    контрольная точка — сайт меняет расположение блоков под планшет или под смартфон.
+  </p>
+</section>
+
+<section class="slide">
+  <h2>Отзывчивый сайт.</h2>
+  <p>
+    <img
+        src="https://blog.sibirix.ru/upload/tilda/4f3/x4f3a5e31c117228be18e37463fee6cea.gif.pagespeed.ic.CttqpaTYBT.webp"
+        alt="пример сетки отзывчивого веб-сайта">
+  </p>
+</section>
+
+<section class="slide">
+  <h2>Примеры «responsive»:</h2>
+  <ul>
+    <li><a href="http://indicius.com/" target="_blank">indicius.com</a></li>
+    <li><a href="http://paulvanoijen.com/" target="_blank">paulvanoijen.com</a></li>
+    <li><a href="https://www.theeddynyc.com/" target="_blank">www.theeddynyc.com</a></li>
+    <li><a href="https://www.gogoro.com/" target="_blank">www.gogoro.com</a></li>
+    <li><a href="http://www.jdcdesignstudio.com/" target="_blank">www.jdcdesignstudio.com</a></li>
+    <li><a href="https://onreplaytv.com/" target="_blank">onreplaytv.com</a></li>
+    <li><a href="http://threedaysgrace.com/" target="_blank">threedaysgrace.com</a></li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>Сравним</h2>
+  <p class="w49perc dib">
+    <img class="w100perc"
+         src="https://blog.sibirix.ru/upload/tilda/f60/xf606c5d0e036d502409aa4031522280e.gif.pagespeed.ic._shOFslZqW.webp"
+         alt="пример сетки отзывчивого веб-сайта">
+  </p>
+
+  <p class="w49perc dib">
+    <img class="w100perc"
+         src="https://blog.sibirix.ru/upload/tilda/4f3/x4f3a5e31c117228be18e37463fee6cea.gif.pagespeed.ic.CttqpaTYBT.webp"
+         alt="пример сетки отзывчивого веб-сайта">
+  </p>
+</section>
+
+<section class="slide">
+  <h2>Попробуем определить вместе, какой тип сайта</h2>
+  <ul>
+    <li><a href="https://www.playstation.com/en-us/games/shadow-warrior-2-ps4/" target="_blank">www.playstation.com</a>
+    </li>
+    <li><a href="https://calhounsuperstructure.com/" target="_blank">calhounsuperstructure.com</a></li>
+    <li><a href="https://www.mongodb.com/cloud" target="_blank">www.mongodb.com</a></li>
+    <li><a href="http://www.europarc-deutschland.de/marktplatz-natur/" target="_blank">www.europarc-deutschland</a></li>
+    <li><a href="https://www.nasa.gov/" target="_blank">www.nasa.gov</a></li>
+    <li><a href="https://overv.io/" target="_blank">overv.io</a></li>
+    <li><a href="http://www.washington.edu/" target="_blank">www.washington.edu</a></li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2> Резина или фикс?</h2>
+  <ul>
+    <li>Если нет явной задачи делать резину — на мобильной версии можете сделать резину, на всех остальных фикс.</li>
+    <li>Если есть задача делать резину:
+      <ul>
+        <li>определитесь, на каких версиях макет будет тянуться,</li>
+        <li>увеличьте сроки и стоимость работы.</li>
+      </ul>
+    </li>
+
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>Время и стоимость работ</h2>
+  <ul>
+    <li>Резиновая вёрстка увеличивать стоимость разработки и поддержки в 2-3 раза.</li>
+    <li>Фиксированные сетки и сетки в процентах делаются с одинаковой скоростью (при наличии опыта).</li>
+    <li>Трудоёмкость возрастает из-за содержимого этих сеток.</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>Время и стоимость работ</h2>
+  <ul>
+    <li>При резиновой вёрстке поведение содержания в крайних точках нужно дополнительно улучшать.</li>
+    <li>Это съедает время.</li>
+    <li>Нужна высокая квалификация верстальщика, который начинает решать дизайнерские задачи.</li>
+    <li>Если верстальщик не сильный, то в работу нужно включать дизайнера.</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>Типовые задачи для фикса</h2>
+  <ul>
+    <li>Малая плотность информации в интерфейсе.</li>
+    <li>Карточные интерфейсы, в которых важно сохранение пропорций.</li>
+    <li>Текстовые интерфейсы.</li>
+    <li>Быстрая и дешёвая поточная разработка.</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>Типовые задачи для резины</h2>
+  <ul>
+    <li>Интерфейсы с высокой плотностью информации.</li>
+    <li>Интерфейсы, специально рисовавшиеся под резину.</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>Mobile first</h2>
+
+  <p>Когда дизайн страниц изначально создают на экране
+     мобильника и выкидывают из дизайна всё лишнее.</p>
+</section>
+
+<section class="slide">
+  <h2>Mobile first c технической точки зрения:</h2>
+  <ul>
+    <li><b>Тестирование на настоящих мобильных.</b></li>
+    <li><b>Оптимизация веса страниц, скорости загрузки, производительности (и чтобы батарейку не съедало).</b></li>
+    <li>Принцип «от простой сетки к сложной».</li>
+    <li>Детали для планшетных и десктопных версий спрятаны</li>
+    <li>умолчанию.</li>
+    <li>Увеличенные элементы управления.</li>
+    <li>Измененное положение элементов управления.</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>Источники информации:</h2>
+  <ul>
+    <li>
+      <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        htmlacademy.ru
+      </a>
+    </li>
+    <li>
+      <a href="https://blog.sibirix.ru" target="_blank">
+        blog.sibirix.ru
+      </a>
+    </li>
+    <li>
+      <a href="https://www.mann-ivanov-ferber.ru/books/book-apart/otzivchivij-web-design/" target="_blank">
+        Итан Маркотт - Отзывчивый веб-дизайн
+      </a>
+    </li>
+
+  </ul>
+</section>
+
+<div class="progress"></div>
+
+<script src="shower/shower.min.js"></script>
+<!-- Copyright © 2017 Yours Truly, Famous Inc. -->
 
 </body>
 </html>
